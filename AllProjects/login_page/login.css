@@ -1,0 +1,214 @@
+/* UNIVERSAL SELECTOR */
+*{
+    outline: none;
+    box-sizing: border-box;
+}
+
+/* HTML TAG */ 
+html{
+    scroll-behavior: smooth;
+}
+
+/* WEBKIT  */
+::-webkit-scrollbar{
+    display: none;
+}
+
+/* BODY  */
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* HERO BOX  */
+.hero_box{
+    width: 500px;
+    height: 550px;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.hero_box_heading{
+    width: 300px;
+    padding-left: 10px;
+}
+.hero_box_heading .para{
+    opacity: 0.5;
+}
+.hero_box_heading .heading{
+    font-size: 20px; 
+}
+/* FORM  */
+form{
+    width:300px ;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+input{
+    padding: 10px;
+    border-radius: 20px;
+    border: 10px;
+    width: 250px;
+    margin-left: 10px;
+}
+.input_email{
+    box-shadow: 1px 1px 5px rgb(181, 176, 176);
+}
+label{
+    padding: 10px;
+}
+.checkbox input{
+    width: 10px;
+    height: 10px;
+    margin-top: 12px;
+}
+.checkbox label{
+    font-size: 12px;
+    width: 200px;
+    height: 30px;
+    opacity: 0.5;
+}
+.checkbox{
+    width: 300px;
+    height: 40px;
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 7px;
+}
+.login_btn{
+    background-color: rgb(111, 132, 150);
+    color: white;
+}
+.login_btn:hover{
+     background-color: rgb(149, 169, 186);
+     color: white;
+}
+/* BUTTON  */
+button{
+    width: 250px;
+    height: 37px;
+    border-radius: 20px;
+    border: 20px;
+    margin-left: -25px;
+    margin-top: 20px;
+    background-color: white;
+    box-shadow: 1px 1px 5px rgb(181, 176, 176);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+button:hover{
+    background-color: rgb(111, 132, 150);
+    color: white;
+}
+/* HORIZONTAL LINE  */
+.horizontal_line_one{
+    width: 300px;
+    opacity: 0.2;
+}
+.horizontal_line_two{
+    width: 130px;
+    margin-right: 270px;
+    margin-top: -25px;
+    opacity: 0.2;
+}
+.horizontal_line_three{
+    width: 130px;
+    margin-left: 270px;
+    margin-top: -10px;
+    opacity: 0.2;
+}
+.hr_p{
+    opacity: 0.2;
+}
+
+/* IMAGE  */
+img{
+    width: 15px;
+    height: 15px; 
+    object-fit: cover;
+    object-position: center;
+}
+
+.backbtn{
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+}
+.backbtn:hover{
+    color:rgb(111, 132, 150);
+}
+.signup
+{
+    color: red;
+    cursor: pointer;
+}
+.signup:hover{
+    color: tomato;
+}
+
+/* SHOE OR HIDE  */
+.show_hide input{
+    width: 230px;
+    margin-left: -1px;
+    outline: 0;
+}
+.show_hide p{
+    font-size: 12px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.show_hide{
+    margin-left: 10px;
+    border-radius: 20px;
+    width: 250px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 1px 1px 5px rgb(181, 176, 176);
+}
+.signupbtn{
+    text-decoration: none;
+    /* margin-top: 3%; */
+    color: black;
+}
+.signupbtn:hover
+{
+    color:rgb(84, 95, 105);
+}
+.signupcnt{
+    color:rgb(111, 132, 150);
+}
+
+/* MEDIA QUERY  */
+@media screen and (max-width: 500px)
+{
+    .hero_box_heading .para{
+        font-size:20px ;
+    }
+    .hero_box_heading .heading{
+        font-size: 25px;
+    }
+    .hero_box_heading{
+        width: 250px;
+        margin-left: -60px;
+    }
+    .checkbox{
+        display: none;
+    }
+    .login_btn{
+        margin-top: 40px;
+    }
+    form{
+        height: 250px;
+    }
+}

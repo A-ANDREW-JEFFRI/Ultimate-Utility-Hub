@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <!-- LINK CSS  -->
+    <link rel="stylesheet" href="../login_page/login.css">
+</head>
+<body>
+    <a class="backbtn" href="../Product.html"><img src="../IMAGES/back.png" alt=""> Back</a>
+    <div class="hero_box">
+        <div class="hero_box_heading">
+          <b> <span class="heading"> Login to your account</span></b> <br>
+          <span class="para"> with your registered Email Address</span>
+        </div>
+        <form action="">
+            <hr class="horizontal_line_one">
+            <label for="a">Email address*</label>
+            <input class="input_email" type="email" id="a" placeholder="Enter email address" name="userMail">
+            <label for="b">Enter password*</label>
+            <div class="show_hide">
+                <input class="input_password" type="password" id="b" placeholder="password" name="password">
+                <p class="click_para" id="a">Show</p>
+            </div>
+            <div class="checkbox">
+                <input type="checkbox">
+                <label for="">Remember my password</label>
+            </div>
+            <input class="login_btn" type="submit" value="Login">
+            
+        </form>
+        <p class="hr_p">or</p>
+        <hr class="horizontal_line_two"><hr class="horizontal_line_three">
+        
+        <button> <img src="../IMAGES/google.png" alt="G"> Login with Google</button><br><br>
+          <p class="signupcnt">Have not account yet? <a class="signupbtn" href="../login_page/Signup.html">SIGN UP</a></p>
+          
+         
+    </div>
+    
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+</body>
+</html>

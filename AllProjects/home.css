@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    padding: 10px;
+}
+
+img {
+    height:500PX;
+    max-width: 100%;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.col-4, .col-6, .col-9 {
+    padding: 10px;
+}
+
+.col-9 {
+    flex: 0 0 100%;
+    text-align: center;
+}
+
+.col-4, .col-6 {
+    flex: 0 0 100%;
+}
+
+.btn{
+    width: 30%;
+    height:60px;
+    margin-top: 2%;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: hsl(122, 39%, 50%);
+    color: white;
+    border: none;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: hsl(122, 39%, 40%);
+    
+    color: black;
+}
+
+.btn a{
+    text-decoration: none;
+    color: white;
+}
+
+.btn a:hover{
+    
+    color: black;
+}
+
+
+@media (min-width: 768px) {
+    .col-4 {
+        flex: 0 0 40%;
+    }
+    .col-6 {
+        flex: 0 0 50%;
+    }
+}
+
+center {
+    font-size: 10vw;
+    color: rgba(35, 177, 0, 0.429);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+span {
+    font-size: larger;
+    font-weight: bold;
+    color: rgba(20, 61, 10, 0.804);
+}
+
+@media (min-width: 1200px) {
+    center {
+        font-size: 100px;
+    }
+    span {
+        font-size: larger;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

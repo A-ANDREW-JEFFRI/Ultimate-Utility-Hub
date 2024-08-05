@@ -1,0 +1,134 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: hsl(0, 0%, 90%);
+    margin: 0;
+    padding: 1rem;
+}
+
+#myH1 {
+    font-size: 3rem;
+    font-family: "Arial", sans-serif;
+    color: hsl(0, 0%, 25%);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    border: 5px solid;
+    border-radius: 50px;
+    background-color: white;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#display {
+    font-size: 3rem;
+    font-family: monospace;
+    font-weight: bold;
+    color: hsl(0, 0%, 30%);
+    text-shadow: 2px 2px 2px hsl(0, 0%, 0%, 0.75);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+#controls {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#controls button {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.75rem 1.25rem;
+    margin: 0.5rem;
+    min-width: 100px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+#startBtn {
+    background-color: hsl(115, 100%, 40%);
+}
+
+#startBtn:hover {
+    background-color: hsl(115, 100%, 30%);
+}
+
+#stopBtn {
+    background-color: hsl(10, 90%, 50%);
+}
+
+#stopBtn:hover {
+    background-color: hsl(10, 90%, 40%);
+}
+
+#resetBtn {
+    background-color: hsl(205, 90%, 60%);
+}
+
+#resetBtn:hover {
+    background-color: hsl(205, 90%, 50%);
+}
+
+.backImg {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+    object-position: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+}
+
+a:hover {
+    color: rgb(111, 132, 150);
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    #myH1 {
+        font-size: 2.5rem;
+    }
+
+    #display {
+        font-size: 2.5rem;
+    }
+
+    #controls button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+        min-width: 90px;
+    }
+}
+
+@media (max-width: 480px) {
+    #myH1 {
+        font-size: 2rem;
+    }
+
+    #display {
+        font-size: 2rem;
+    }
+
+    #controls button {
+        font-size: 0.875rem;
+        padding: 0.5rem 0.75rem;
+        min-width: 80px;
+    }
+}
